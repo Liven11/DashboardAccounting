@@ -178,9 +178,7 @@ export const GeneralSidebarSection = (): JSX.Element => {
                 Payment Details
               </h3>
               <AccordionTrigger className="p-0">
-                <div className="w-5 sm:w-6 h-5 sm:h-6 flex items-center justify-center bg-[#603ae51a] rounded-md">
-                  <ChevronUpIcon className="h-3 sm:h-4 w-3 sm:w-4 text-[#603ae5]" />
-                </div>
+
               </AccordionTrigger>
             </div>
 
@@ -254,9 +252,7 @@ export const GeneralSidebarSection = (): JSX.Element => {
                 Description
               </h3>
               <AccordionTrigger className="p-0">
-                <div className="w-5 sm:w-6 h-5 sm:h-6 flex items-center justify-center bg-[#603ae51a] rounded-md">
-                  <ChevronUpIcon className="h-3 sm:h-4 w-3 sm:w-4 text-[#603ae5]" />
-                </div>
+
               </AccordionTrigger>
             </div>
 
@@ -311,29 +307,6 @@ export const GeneralSidebarSection = (): JSX.Element => {
           </AccordionItem>
         </Accordion>
 
-        <div className="w-full relative h-10 sm:h-14">
-          <div className="flex justify-between items-center">
-            <Button
-              variant="ghost"
-              size="icon"
-              className="w-5 sm:w-6 h-5 sm:h-6 bg-[#e7e7ee] rounded p-0"
-            >
-              <ChevronLeftIcon className="h-3 sm:h-4 w-3 sm:w-4" />
-            </Button>
-            <div className="flex items-center gap-1">
-              <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-[#603ae5] rounded" />
-              <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-[#f0ecfd] rounded" />
-            </div>
-            <Button
-              variant="ghost"
-              size="icon"
-              className="w-5 sm:w-6 h-5 sm:h-6 bg-[#e7e7ee] rounded p-0"
-            >
-              <ChevronRightIcon className="h-3 sm:h-4 w-3 sm:w-4" />
-            </Button>
-          </div>
-          <Separator className="mt-2 sm:mt-4" />
-        </div>
 
         <div className="flex flex-col items-center gap-2 sm:gap-3 w-full">
           <Button

@@ -5,8 +5,8 @@ import { NavigationSection } from "./sections/NavigationSection/NavigationSectio
 
 export const ReviewingBills = (): JSX.Element => {
   return (
-    <div className="flex h-screen bg-[#f5f5fa] overflow-auto">
-      <aside className="w-[6%] md:w-[6%] min-h-[60px] md:min-h-screen overflow-hidden">
+    <div className="flex flex-col sm:flex-row h-screen bg-[#f5f5fa] overflow-auto">
+      <aside className="w-full sm:w-[80px] min-h-[60px] sm:min-h-screen overflow-hidden">
         <AccountantSidebarSection />
       </aside>
 
@@ -15,21 +15,15 @@ export const ReviewingBills = (): JSX.Element => {
           <NavigationSection />
         </header>
 
-        <div className="flex-1 flex overflow-hidden">
+        <div className="flex-1 flex flex-col sm:flex-row overflow-hidden">
           <main className="flex-1 overflow-auto">
             <MainContentSection />
           </main>
 
-
-          <aside className="w-[20%] md:w-[20%] flex flex-col overflow-y-auto relative">
+          <aside className="w-full sm:w-[20%] md:w-[389px] flex flex-col overflow-y-auto relative">
             <GeneralSidebarSection />
-            <div className="fixed bottom-4 right-4 md:absolute md:top-[938px] md:right-[122px] z-20">
-              {/* <Button
-                className="display-hidden w-14 h-14 p-3 bg-[#9c85ed] shadow-[0px_2px_10px_#00000040] rounded-lg"
-                size="icon"
-              >
-                <HelpCircleIcon className="w-7 h-7 text-white" />
-              </Button> */}
+            <div className="fixed bottom-4 right-4 sm:absolute sm:top-[938px] sm:right-[122px] z-20">
+              {/* Help button commented out as per original */}
             </div>
           </aside>
         </div>
